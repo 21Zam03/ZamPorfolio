@@ -9,8 +9,9 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    /* --foreground: #ededed; */
+    --foreground: #000000; 
   }
 }
 
@@ -18,6 +19,28 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.ant-carousel .slick-dots li button {
+  background-color: #4782ff; /* Color de fondo de los dots */
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+  background-color: #4782ff; /* Color de los dots activos */
+}
+
+/* Cambiar color de las flechas en el Carousel */
+.ant-carousel .slick-prev,
+.ant-carousel .slick-next {
+  color: #4782ff; /* Cambiar color de las flechas (ejemplo: rojo) */
+  font-size: 2rem;
+}
+
+/* Opcional: cambiar color de las flechas cuando están activas (hover) */
+.ant-carousel .slick-prev:hover,
+.ant-carousel .slick-next:hover {
+  color: #4782ff; /* Cambiar color al pasar el mouse (ejemplo: verde) */
+  font-size: 2rem;
 }
 
 @layer utilities {
